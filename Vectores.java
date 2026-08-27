@@ -4,10 +4,10 @@ public class Vectores {
       
     public static void main (String[] args) {
         
-        try (Scanner Lector = new Scanner(System.in)) {
+        Scanner Lector = new Scanner(System.in);
 
             //===========================
-            //1 CREAR Y LLENAR VECTORES
+            //1. CREAR Y LLENAR VECTORES
             //===========================
             
             //Creacion de un vector de 15 numeros enteros
@@ -27,7 +27,7 @@ public class Vectores {
                     // Mostrar mensaje si el número está fuera del rango
                     System.out.println("El número está fuera del rango.");
 
-                    // Volver a solicitar el número
+                    // Volver a solicitar el número si no esta dentro del rano
                     System.out.print("Ingrese nuevamente el número: ");
                     numero = Lector.nextInt();
                 }
@@ -46,7 +46,7 @@ public class Vectores {
             }
 
             //================================
-            // 2 BUSCAR UN VALOR EN EL VECTOR
+            // 2. BUSCAR UN VALOR EN EL VECTOR
             //================================
 
             System.out.println("\n=== BUSCAR UN VALOR ===");
@@ -133,6 +133,79 @@ public class Vectores {
                         + X + " en el vector.");
             }
         }
+
+            // =====================================================
+            // 5. CALCULAR LA SUMA DE TODOS LOS VALORES
+            // =====================================================
+
+            System.out.println("\n=== SUMA DE LOS VALORES ===");
+
+            int suma = 0;
+
+            // Recorremos el vector para sumar todos sus elementos
+            for (int i = 0; i < vector.length; i++) {
+                suma = suma + vector[i];
+            }
+
+            System.out.println("La suma total es: " + suma);
+
+            // =====================================================
+            // 6. CREAR VECTOR CON NÚMEROS POR ENCIMA DEL PROMEDIO
+            // =====================================================
+
+            System.out.println("\n=== NÚMEROS POR ENCIMA DEL PROMEDIO ===");
+            
+            // Calculamos el promedio de los valores del vector
+            double promedio = (double) suma / vector.length;
+
+            // Mostramos el promedio calculado
+            System.out.println("El promedio es: " + promedio);
+
+            // Contamos cuántos números son mayores que el promedio
+            int cantidadMayores = 0;
+
+            // Recorremos el vector para encontrar los números mayores al promedio
+            for (int i = 0; i < vector.length; i++) {
+                
+                if (vector[i] > promedio) {
+                cantidadMayores++;
+            }
         }
+            // Verificamos si hay números mayores que el promedio
+            if (cantidadMayores == 0) {
+
+                System.out.println("No hay números mayores que el promedio.");
+
+        } else {
+            
+            // Creamos un nuevo vector con el tamaño necesario
+            int[] vectorMayores = new int[cantidadMayores];
+
+            int posicion = 0;
+
+            // Llenamos el nuevo vector
+            for (int i = 0; i < vector.length; i++) {
+
+                if (vector[i] > promedio) {
+
+                    vectorMayores[posicion] = vector[i];
+                    posicion++;
+                }
+            }
+            
+             // Mostramos el nuevo vector
+            System.out.println("Números por encima del promedio:");
+
+            for (int i = 0; i < vectorMayores.length; i++) {
+                System.out.println("posicion [" + i + "]= " + vectorMayores[i]);
+            }
+
+            //Mostrar la cantidad
+            System.out.println("Cantidad de números por encima del promedio: " + cantidadMayores);
+        
+  
+        }
+        // Cerramos Scanner
+        Lector.close();
     }
-}
+} 
