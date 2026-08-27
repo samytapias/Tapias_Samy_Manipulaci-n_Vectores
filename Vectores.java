@@ -7,7 +7,7 @@ public class Vectores {
         try (Scanner Lector = new Scanner(System.in)) {
 
             //===========================
-            //1 Crear y llenar vectores
+            //1 CREAR Y LLENAR VECTORES
             //===========================
             
             //Creacion de un vector de 15 numeros enteros
@@ -46,7 +46,7 @@ public class Vectores {
             }
 
             //================================
-            // 2 Buscar un Valor en el vector
+            // 2 BUSCAR UN VALOR EN EL VECTOR
             //================================
 
             System.out.println("\n=== BUSCAR UN VALOR ===");
@@ -71,7 +71,68 @@ public class Vectores {
                 System.out.println("El número " + buscar
                         + " no se encuentra en el vector.");
             }
-        }
+        
+            // =====================================================
+            // 3. ENCONTRAR EL MAYOR Y MENOR VALOR DENTRO DEL VECTOR
+            // =====================================================
 
+            System.out.println("\n=== MAYOR Y MENOR ===");
+
+             int mayor = vector[0];
+             int menor = vector[0];
+
+            // Recorremos el vector
+            for (int i = 1; i < vector.length; i++) {
+
+            // Comparamos para encontrar el mayor
+            if (vector[i] > mayor) {
+                mayor = vector[i];
+            }
+
+            // Comparamos para encontrar el menor
+            if (vector[i] < menor) {
+                menor = vector[i];
+            }
+        }
+             System.out.println("El número mayor es: " + mayor);
+             System.out.println("El número menor es: " + menor);
+            
+             // =====================================================
+             // 4. IDENTIFICAR MÚLTIPLOS DE UN NÚMERO
+             // =====================================================
+
+            System.out.println("\n=== MÚLTIPLOS ===");
+
+            // Pedimos al usuario el número para buscar sus múltiplos
+            System.out.print("\nIngrese un número X para buscar sus múltiplos: ");
+             int X = Lector.nextInt();
+
+              boolean hayMultiplos = false;
+
+            // Verificamos que X no sea cero
+             if (X == 0) {
+            System.out.println("No se puede buscar múltiplos de 0.");
+            } else {
+
+            // Recorremos el vector
+            for (int i = 0; i < vector.length; i++) {
+
+                // Si el residuo es 0, significa que es múltiplo
+                if (vector[i] % X == 0) {
+
+                    System.out.println(vector[i]
+                            + " es múltiplo de " + X);
+
+                    hayMultiplos = true;
+                }
+            }
+
+            // Si no encontramos ningún múltiplo
+            if (hayMultiplos == false) {
+                System.out.println("No hay múltiplos de "
+                        + X + " en el vector.");
+            }
+        }
+        }
     }
 }
