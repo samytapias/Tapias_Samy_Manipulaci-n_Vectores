@@ -68,7 +68,7 @@ El programa calcula el promedio de los valores del vector original y crea un nue
 
 Aquí se muestra la ejecución del programa donde se ingresan los 15 números y se muestran los valores almacenados en el vector.
 
-![Captura Punto 1](Capturas/captura_punto1.png)
+![Captura Punto 1](Capturas/captura_punto1 .png)
 
 ### Punto 2: Buscar un valor
 
@@ -124,9 +124,7 @@ Tapias_Samy_Manipulación_Vectores/
 │   ├── captura_punto5.png
 │   └── captura_punto6.png
 └── README.md
-
-## Video de sustentación
-
-Enlace al video de sustentación:
+´´
+##
 
 
