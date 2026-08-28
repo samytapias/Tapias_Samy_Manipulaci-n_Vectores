@@ -68,36 +68,36 @@ El programa calcula el promedio de los valores del vector original y crea un nue
 
 Aquí se muestra la ejecución del programa donde se ingresan los 15 números y se muestran los valores almacenados en el vector.
 
-![Captura Punto 1](capturas/Captura_punto1.png)
+![Captura Punto 1](Capturas/captura_punto1.png)
 
 ### Punto 2: Buscar un valor
 
 Aquí se muestra la búsqueda de un número dentro del vector y la posición donde se encuentra.
 
-![Captura Punto 2](capturas/Captura_punto2.png)
+![Captura Punto 2](Capturas/captura_punto2.png)
 ### Punto 3: Mayor y menor
 
 Aquí se muestra el número mayor y el número menor encontrados en el vector.
 
-![Captura Punto 3](capturas/Captura_punto3.png)
+![Captura Punto 3](Capturas/captura_punto3.png)
 
 ### Punto 4: Múltiplos
 
 Aquí se muestran los números del vector que son múltiplos del número ingresado por el usuario.
 
-![Captura Punto 4](capturas/Captura_punto4.png)
+![Captura Punto 4](Capturas/captura_punto4.png)
 
 ### Punto 5: Suma
 
 Aquí se muestra la suma total de los valores del vector.
 
-![Captura Punto 5](capturas/Captura_punto5.png)
+![Captura Punto 5](Capturas/captura_punto5.png)
 
 ### Punto 6: Promedio y números por encima del promedio
 
 Aquí se muestra el promedio, los números que están por encima del promedio y la cantidad de números encontrados.
 
-![Captura Punto 6](capturas/Captura_punto6.png)
+![Captura Punto 6](Capturas/captura_punto6.png)
 
 ## Cómo ejecutar el programa
 
