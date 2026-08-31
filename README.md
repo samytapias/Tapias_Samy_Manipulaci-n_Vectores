@@ -124,7 +124,11 @@ Tapias_Samy_Manipulación_Vectores/
 │   ├── captura_punto5.png
 │   └── captura_punto6.png
 └── README.md
-´´
-##
+```
+## Video de sustentación
+
+En el siguiente video se presenta la sustentación del programa, explicando el funcionamiento del código y demostrando cada uno de los puntos solicitados en la actividad.
+
+[Ver video de sustentación](https://youtu.be/6e_qQBa1Wt8)
 
 

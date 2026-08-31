@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Vectores {
-      
+
     public static void main (String[] args) {
         
         Scanner Lector = new Scanner(System.in);
